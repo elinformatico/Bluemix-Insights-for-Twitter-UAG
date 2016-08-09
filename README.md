@@ -1,6 +1,6 @@
-Materia: Recuperación de Información de la Web
-Alumno: JOSÉ NOÉ HERNÁNDEZ VIVANCO
-Número: 3024021
+* Materia: Recuperación de Información de la Web
+* Alumno: JOSÉ NOÉ HERNÁNDEZ VIVANCO
+* Número: 3024021
 
 Proyecto de Bluemix en donde se describe como configurar el Servlet para obtener Tuits de la plataforma Bluemix
 
