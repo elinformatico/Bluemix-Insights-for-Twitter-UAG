@@ -2,12 +2,12 @@ Materia: Recuperación de Información de la Web
 Alumno: JOSÉ NOÉ HERNÁNDEZ VIVANCO
 Número: 3024021
 
-Proyecto de Bluemix en donde se describe como crear un traductor sencillo utilizando la Plataforma Bluemix.
+Proyecto de Bluemix en donde se describe como configurar el Servlet para obtener Tuits de la plataforma Bluemix
 
 ## Paso 1 ##
 * Ingresar a bluemix.net y autenticarse (ingresar nombre de usuario y contraseña) registrados previamente.
 * Buscar la opción Panel de control y hacer clic.
-* Dirigirnos a: Servicios y API, y dar clic en la opción (Utilizar servicios o API).
+* Dirigirnos a: Servicios y API, y dar clic en la opción (Utilizar de Insights for Twitter).
 * localizar el Servicio: "Language Translation" y dar clic dentro de el.
 * Presionar el botón "Crear servicio" y una vez creado  localizar "Credenciales del Servicio"
 * Utilizar las credenciales como en el ejemplo siguiente pero para nuestro codigo.
@@ -33,14 +33,19 @@ Guardamos cambios sobre el archivo y luego directamente en el icono de nuestro p
 Listo, ya esta configurado el proyecto.
 Notas: Maven es una herramienta para la gestión y construcción de proyectos en Java, básicamente toma lo que agregamos en el archivo pom.xml, se conecta a un repositorio y descarga las dependencias que necesite, para este aspecto es análogamente a lo que hicimos con npm install en node.js
 
+## Ejemplo de conexión usando Java ##
+![image](imagenes/ejemplo_conexion.PNG)
 
 ## Paso 4 - Probando nuestra aplicación ##
 * Expandimos la carpeta Source Packages.
 * clic con botón secundario del mouse (sobre el paquete) >> new >> Servlet, seleccionar de la categoria WEB de lado derecho buscan Servlet y aceptar o siguiente.
 * Nombramos cualquier nombre de clase damos en finalizar.
 
-Un ejemplo a continuación:
+Un ejemplo a continuación (El JSON se deberia mostrar como sigue)
 
+El json obtenido del ejemplo fue guardado en el archivo del directorio raiz del proyecto llamado "data.json"
+
+Ejemplo de salida JSON
 ![image](imagenes/ejemplo.PNG)
 
 Para agregar las dependencia (con [Shift + Ctrl + i] las incluye en automático).
@@ -53,7 +58,7 @@ Nos debera desplegar un sitio Web y dependiendo como las hayamos declarado nuest
 
 Funcionando seria como sigue:
 
-(http://localhost:8080/BluemixTranslate/TranslateBluemixServlet?frase=Hello how are you, you are very pretty)
+http://localhost:8080/BluemixTwitter/TwitterBluemixServlet?query=uag
 
 Resultado:
 
